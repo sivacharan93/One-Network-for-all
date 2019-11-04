@@ -1,2 +1,4 @@
 # One Network for all
- Using latent space effectively for multiple applications.
+ Each layer in a neural network holds important information, depending on how deep the model is a layer can give high-level or low-level features. We tried to exploit this fact by extracting the information from layers of a neural network built for image captioning task and use it to solve different problems such as extracting similar images for a given image, extracting similar words for given word during inference.
+The main task is image captioning which involves generating a textual description of an image. It is a difficult task given we must incorporate visual understanding in a linguistical sense. Further, we have explored the use of the same model to solve the complete opposite problem of retrieving an image for a given input caption.
+We were able to perform all the mentioned tasks by using the embeddings generated from the intermediate layers. Also, we explored an interesting method of approximating the embedding given the caption and used it to find relevant images for a given caption. We have examined the results for all individual tasks.
